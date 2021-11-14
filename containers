@@ -1,0 +1,216 @@
+
+//DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
+
+package containers;
+
+public class BasicContainer extends Container {
+	public BasicContainer(int ID, int weight) {
+		super(ID, weight);
+	}
+	final double fuelConsumption = 2.50; protected int portID;protected int shipID;
+	public double consumption() {
+		return fuelConsumption*weight;
+	}
+	boolean equals(Container other) {
+		if(weight == other.weight && ID == other.ID) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	public int getPortID() {
+		return portID;
+	}
+
+	public void setPortID(int portID) {
+		this.portID = portID;
+	}
+
+	public int getShipID() {
+		return shipID;
+	}
+
+	public void setShipID(int shipID) {
+		this.shipID = shipID;
+	}
+
+}
+
+
+//DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
+
+
+
+//DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
+
+package containers;
+
+public abstract class Container {
+	public int ID;public int weight; double fuelConsumption; protected int portID;protected int shipID;
+	
+	public Container(int ID, int weight) {  //constructor
+		this.ID = ID; this.weight = weight;
+	}
+	
+	public double consumption() {
+		return weight*fuelConsumption;
+	}
+	
+	boolean equals(Container other) {
+		if(weight == other.weight && ID == other.ID) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public int getPortID() {
+		return portID;
+	}
+
+	public void setPortID(int portID) {
+		this.portID = portID;
+	}
+
+	public int getShipID() {
+		return shipID;
+	}
+
+	public void setShipID(int shipID) {
+		this.shipID = shipID;
+	}
+
+}
+
+
+
+//DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
+
+
+
+//DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
+
+package containers;
+
+public class HeavyContainer extends Container {
+	public HeavyContainer(int ID, int weight) {
+		super(ID, weight);
+	}
+	double fuelConsumption = 3.00; protected int portID; protected int shipID;
+	public double consumption() {
+		return fuelConsumption*weight;
+	}
+	boolean equals(Container other) {
+		if(weight == other.weight && ID == other.ID) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	public int getPortID() {
+		return portID;
+	}
+
+	public void setPortID(int portID) {
+		this.portID = portID;
+	}
+
+	public int getShipID() {
+		return shipID;
+	}
+
+	public void setShipID(int shipID) {
+		this.shipID = shipID;
+	}
+}
+
+
+
+//DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
+
+
+
+//DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
+
+package containers;
+
+public class LiquidContainer extends HeavyContainer{
+	public LiquidContainer(int ID, int weight) {
+		super(ID, weight);
+	}
+	final double fuelConsumption = 5.00; protected int portID;protected int shipID;
+	public double consumption() {
+		return fuelConsumption*weight;
+	}
+	boolean equals(Container other) {
+		if(weight == other.weight && ID == other.ID) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	public int getPortID() {
+		return portID;
+	}
+
+	public void setPortID(int portID) {
+		this.portID = portID;
+	}
+
+	public int getShipID() {
+		return shipID;
+	}
+
+	public void setShipID(int shipID) {
+		this.shipID = shipID;
+	}
+
+}
+
+
+
+//DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
+
+
+
+//DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
+
+package containers;
+
+public class RefrigeratedContainer extends HeavyContainer {
+	public RefrigeratedContainer(int ID, int weight) {
+		super(ID, weight);
+	}
+	final double fuelConsumption = 4.00; protected int portID;protected int shipID;
+	public double consumption() {
+		return fuelConsumption*weight;
+	}
+	boolean equals(Container other) {
+		if(weight == other.weight && ID == other.ID) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	public int getPortID() {
+		return portID;
+	}
+
+	public void setPortID(int portID) {
+		this.portID = portID;
+	}
+
+	public int getShipID() {
+		return shipID;
+	}
+
+	public void setShipID(int shipID) {
+		this.shipID = shipID;
+	}
+
+}
+
+
+
+//DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
+
